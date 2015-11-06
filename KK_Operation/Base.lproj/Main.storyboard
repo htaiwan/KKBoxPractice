@@ -45,29 +45,29 @@
                                     <constraint firstAttribute="height" constant="236" id="ZiI-b1-gIG"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-sD-Pvz">
-                                <rect key="frame" x="275" y="108" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v0-Gv-a98">
+                                <rect key="frame" x="278" y="104" width="45" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Grc-Oa-dkz"/>
-                                    <constraint firstAttribute="width" constant="50" id="hyk-hs-gdM"/>
+                                    <constraint firstAttribute="width" constant="45" id="CYU-f9-NFm"/>
+                                    <constraint firstAttribute="height" constant="30" id="xEY-3O-v2c"/>
                                 </constraints>
                                 <state key="normal" title="cancel"/>
                                 <connections>
-                                    <action selector="cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRP-Ch-dgI"/>
+                                    <action selector="cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nnr-Nk-jdx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rfv-sD-Pvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AGo-kw-kA5"/>
                             <constraint firstItem="LHP-JG-tL8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNM-CO-fKp"/>
-                            <constraint firstItem="rfv-sD-Pvz" firstAttribute="top" secondItem="LHP-JG-tL8" secondAttribute="bottom" constant="31" id="JX5-bt-rXJ"/>
+                            <constraint firstItem="3v0-Gv-a98" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKz-hs-MrW"/>
+                            <constraint firstItem="3v0-Gv-a98" firstAttribute="top" secondItem="LHP-JG-tL8" secondAttribute="bottom" constant="27" id="Mgi-rg-lYZ"/>
                             <constraint firstItem="LHP-JG-tL8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="NpZ-Rm-2zV"/>
                             <constraint firstItem="Iag-IJ-nZn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OGr-hz-s3g"/>
+                            <constraint firstItem="Iag-IJ-nZn" firstAttribute="top" secondItem="LHP-JG-tL8" secondAttribute="bottom" constant="93" id="daj-ny-UzU"/>
                             <constraint firstItem="LiZ-Fr-4U8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e8Q-e5-9vX"/>
-                            <constraint firstItem="Iag-IJ-nZn" firstAttribute="top" secondItem="rfv-sD-Pvz" secondAttribute="bottom" constant="32" id="rDz-6R-owj"/>
                             <constraint firstItem="LiZ-Fr-4U8" firstAttribute="top" secondItem="Iag-IJ-nZn" secondAttribute="bottom" constant="61" id="xXb-y6-sjO"/>
                         </constraints>
                     </view>

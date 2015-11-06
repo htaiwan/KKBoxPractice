@@ -15,8 +15,8 @@ class AsynOperation: NSOperation {
         return true
     }
     
+    // 1. override executing
     private var _executing = false {
-        // KVO，告訴系統要開始執行operation
         willSet {
             willChangeValueForKey("isExecuting")
         }
@@ -29,6 +29,7 @@ class AsynOperation: NSOperation {
         return _executing
     }
     
+    // 2. override finished
     private var _finished = false {
         willSet {
              willChangeValueForKey("isFinished")
@@ -42,9 +43,28 @@ class AsynOperation: NSOperation {
         return _finished
     }
     
+    // 3. override cancel
+    private var _cancel = false {
+        willSet {
+            willChangeValueForKey("isCancelled")
+        }
+        didSet {
+            didChangeValueForKey("isCancelled")
+        }
+    }
+    
+    override var cancelled: Bool {
+        return _cancel
+    }
+    
     override func start() {
         _executing = true
         execute()
+    }
+    
+    func cancels() {
+        _cancel = true
+        finish()
     }
     
     func execute() {

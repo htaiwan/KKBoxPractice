@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 9. 寫一個 UI，上面有一個按鈕與進度條，按鈕按下後，就會執行 HTTPBinManager 的 executeOperation，然後進度條會顯示 HTTPBinManagerOperation 的執行進度。
 class ViewController: UIViewController,HTTPBinManagerDelegate {
 
     @IBOutlet weak var progressView: UIProgressView!
@@ -36,7 +37,7 @@ class ViewController: UIViewController,HTTPBinManagerDelegate {
     @IBAction func cancel(sender: UIButton) {
         manager.cancelOperation()
     }
-    
+
     
     // MARK: - HTTPBinManagerDelegate
     
@@ -55,8 +56,6 @@ class ViewController: UIViewController,HTTPBinManagerDelegate {
         print("dic2: \(dic2)")
         
         imageView.image = image
-
-
     }
     
     func HTTPBinManagerUpdateProgress(progrss: Float) {

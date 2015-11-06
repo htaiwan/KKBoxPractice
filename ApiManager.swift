@@ -10,6 +10,7 @@ import UIKit
 import AFNetworking
 import Bolts
 
+// 1. 先拿出我們在 練習：將 Web Service API 包裝成 SDK 當中完成的作業。
 class ApiManager: NSObject {
     
     let baseURL = "http://httpbin.org"
